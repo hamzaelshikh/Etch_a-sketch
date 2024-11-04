@@ -1,42 +1,41 @@
 body{
-    background-color: #7d7d7d;
+    
   display: flex;
   flex-direction: column;
   height: 100vh;
   width: 100%;
+  align-items: center;
+  justify-content: center;
 }
-.The_sketch_container {
-    display: flex;
-    justify-content: center;
-    width: 800px;
-    height: 800px;
-    background-color: #991101;
-    padding-top: 50px;
-}
+
   
 .The_sketch_screen{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 600px;
-    height: 600px;
+    height: 500px;
     background-color: #bfbfbf;
+    flex-grow: 0;
 }
   
+
 .The_sketch_screen>div {
     height: auto;
-    flex: 1 0 auto;
-}
-.The_sketch_screen>div {
-    height: auto;
-    flex: 1 0 auto;
+    flex: 1 1 auto;
   
-    /* make columns vertical flexboxes */
+    /* make columns vertical flex boxes */
     display: flex;
     flex-direction: column;
   }
   
 .sThe_sketch_screen>div>* {
     /* make rows evenly distributed */
-    flex: 1;
+    flex-shrink: 1;
+  }
+  .column{
+    flex:auto
+  }
+  .row{
+    flex: auto;
   }
